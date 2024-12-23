@@ -7,7 +7,4 @@ interface RepositorySpl {
     suspend fun insertSpl(supplier: Supplier)
 
     fun getAllSpl(): Flow<List<Supplier>>
-
-    fun getSpl(id: String) : Flow<Supplier>
-
 }
