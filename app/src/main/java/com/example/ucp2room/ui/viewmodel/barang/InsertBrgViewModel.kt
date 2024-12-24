@@ -28,14 +28,20 @@ class InsertBrgViewModel (private val repositoryBrg: RepositoryBrg
         val errorState =  FormErrorState(
             nama = if (event.nama.isNotEmpty()) null else "Nama Barang tidak boleh kosong",
             deskripsi = if (event.deskripsi.isNotEmpty()) null else "Deskripsi tidak boleh kosong",
-            harga = if (event.harga.isNotEmpty()) null else "Harga tidak boleh kosong",
-            stok = if (event.stok.isNotEmpty()) null else "Stok tidak boleh kosong",
+            harga = when {
+                event.harga.isEmpty() -> "Harga tidak boleh kosong"
+                event.harga.toDoubleOrNull() == null -> "Harga harus berupa angka"
+                event.harga.toDouble() < 0 -> "Harga tidak boleh negatif"
+                else -> null
+            },
+            stok = when {
+                event.stok.isEmpty() -> "Stok tidak boleh kosong"
+                event.stok.toIntOrNull() == null -> "Stok harus berupa angka"
+                event.stok.toInt() < 0 -> "Stok tidak boleh negatif"
+                else -> null
+            },
             namaS = if (event.namaS.isNotEmpty()) null else "Nama Supplier tidak boleh kosong",
         )
-
-        if (!errorState.isValid()) {
-            println("Validation failed: $errorState") // Debugging log
-        }
 
         uiState = uiState.copy(isEntryValid = errorState)
         return errorState.isValid()
