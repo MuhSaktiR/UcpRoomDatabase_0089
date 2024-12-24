@@ -129,6 +129,6 @@ Hasil Hapus Meja pada Halaman Daftar Barang
 
 
 Link Youtube :
-https://youtu.be/Duuaklfvhy4?si=Y2gm5g1ItXaRpdXQ
+https://youtu.be/3pXd-gteMvQ?si=qP4sPuQEUZMqxIpc
 
 
