@@ -9,7 +9,7 @@ import com.example.ucp2room.ui.viewmodel.supplier.HomeSplViewModel
 
 object ListSpl {
     @Composable
-    fun NamaSupplier(
+    fun namaSupplier(
         splList: HomeSplViewModel = viewModel(factory = PenyediaViewModel.Factory)
     ) : List<String> {
         val getNamaSpl by splList.homeUIState.collectAsState()

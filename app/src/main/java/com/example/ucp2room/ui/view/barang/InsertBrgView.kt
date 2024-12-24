@@ -203,7 +203,7 @@ fun FormBarang(
             onValueChangedEvent = { pilihSupplier ->
                 onValueChange(barangEvent.copy(namaS = pilihSupplier))
             },
-            options = ListSpl.NamaSupplier(),
+            options = ListSpl.namaSupplier(),
         )
         Text(
             text = errorState.stok ?: "",
