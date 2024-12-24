@@ -127,3 +127,8 @@ Hasil Hapus Meja pada Halaman Daftar Barang
 ![Screenshot 2024-12-24 130250](https://github.com/user-attachments/assets/92bf1d65-f251-4b7f-a302-2cea7651c36f)
 
 
+
+Link Youtube :
+https://youtu.be/Duuaklfvhy4?si=Y2gm5g1ItXaRpdXQ
+
+
