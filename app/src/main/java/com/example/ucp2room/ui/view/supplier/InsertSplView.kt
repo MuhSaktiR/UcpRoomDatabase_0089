@@ -2,17 +2,12 @@ package com.example.ucp2room.ui.view.barang
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.OutlinedTextField
-import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SnackbarHost
 import androidx.compose.material3.SnackbarHostState
@@ -28,9 +23,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.ucp2room.data.entity.Supplier
 import com.example.ucp2room.ui.customwidget.TopAppBar
-import com.example.ucp2room.ui.navigation.AlamatNavigasi
 import com.example.ucp2room.ui.viewmodel.supplier.FormErrorState
 import com.example.ucp2room.ui.viewmodel.supplier.SupplierEvent
 import com.example.ucp2room.ui.viewmodel.supplier.InsertSplViewModel
